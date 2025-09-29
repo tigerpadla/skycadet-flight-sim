@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>SkyCadet Flight Sim | Home</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,24 +18,355 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.3.8 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container-xxl">
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html"
+                    aria-label="SkyCadet Home">
+                    <img src="assets/images/logo.png" alt="SkyCadet logo" class="brand-logo" height="44">
+                    <span class="brand-font">
+                        <span class="text-navy">Sky</span><span class="text-sky">Cadet</span>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#experiences">Simulators</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary btn-cta" href="#booking">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main></main>
+    <main class="pt-nav">
+        <!-- Hero -->
+        <section class="container-xxl mt-4" id="hero">
+            <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="4500"
+                data-bs-pause="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                    </button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                    </button>
+                </div>
 
-    <footer>
-        <!-- place footer here -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="assets/images/hero-737-cockpit-1.jpg" class="card-img"
+                                alt="Boeing 737 cockpit — view 1">
+                            <div class="card-img-overlay d-flex">
+                                <div class="overlay-content my-auto">
+                                    <h1 class="display-5 fw-bold text-white text-uppercase mb-3">
+                                        Experience Full‑Motion Flight Realism
+                                    </h1>
+                                    <p class="lead text-white-75 mb-4">
+                                        Step into a motion sim and pilot your dreams.
+                                    </p>
+                                    <div
+                                        class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-lg-start pt-1">
+                                        <a href="booking.html"
+                                            class="btn btn-primary btn-lg w-100 w-sm-auto me-sm-2">Book a Flight</a>
+                                        <a href="experiences.html"
+                                            class="btn btn-outline-light btn-lg w-100 w-sm-auto">Explore Simulators</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="assets/images/hero-737-cockpit-2.jpg" class="card-img"
+                                alt="Boeing 737 cockpit — view 2">
+                            <div class="card-img-overlay d-flex">
+                                <div class="overlay-content my-auto">
+                                    <h1 class="display-5 fw-bold text-white text-uppercase mb-3">
+                                        Airliner Procedures. Real Avionics.
+                                    </h1>
+                                    <p class="lead text-white-75 mb-4">
+                                        From start‑up to landing, fly like the pros.
+                                    </p>
+                                    <div
+                                        class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-lg-start pt-1">
+                                        <a href="booking.html"
+                                            class="btn btn-primary btn-lg w-100 w-sm-auto me-sm-2">Book a Flight</a>
+                                        <a href="experiences.html"
+                                            class="btn btn-outline-light btn-lg w-100 w-sm-auto">Explore Simulators</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="assets/images/hero-737-cockpit-3.jpg" class="card-img"
+                                alt="Boeing 737 cockpit — view 3">
+                            <div class="card-img-overlay d-flex">
+                                <div class="overlay-content my-auto">
+                                    <h1 class="display-5 fw-bold text-white text-uppercase mb-3">
+                                        Perfect Gift. Unforgettable.
+                                    </h1>
+                                    <p class="lead text-white-75 mb-4">
+                                        Beginner‑friendly sessions with expert guidance.
+                                    </p>
+                                    <div
+                                        class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-lg-start pt-1">
+                                        <a href="booking.html"
+                                            class="btn btn-primary btn-lg w-100 w-sm-auto me-sm-2">Book a Flight</a>
+                                        <a href="experiences.html"
+                                            class="btn btn-outline-light btn-lg w-100 w-sm-auto">Explore Simulators</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"
+                    aria-label="Previous slide">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"
+                    aria-label="Next slide">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Featured Simulators (Experiences) -->
+        <section class="container-xxl py-5" id="experiences">
+            <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
+                <h2 class="h3 fw-bold text-navy mb-4">Featured Simulators</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card sim-card h-100 border-0">
+                            <img src="assets/images/simulator-737-cockpit.jpg" loading="lazy" class="card-img-top"
+                                alt="Boeing 737 cockpit view">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold text-white mb-2">Boeing 737NG Simulator</h3>
+                                <p class="card-text text-white-75 small mb-3">
+                                    Hands-on airline procedures, realistic avionics, and motion cues.
+                                </p>
+                                <a href="experiences.html" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card sim-card h-100 border-0">
+                            <img src="assets/images/simulator-a320-cockpit.jpg" loading="lazy" class="card-img-top"
+                                alt="Airliner cockpit panoramic view">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold text-white mb-2">Airbus A320 Simulator</h3>
+                                <p class="card-text text-white-75 small mb-3">
+                                    Fly-by-wire elegance with modern glass cockpit workflows.
+                                </p>
+                                <a href="experiences.html" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card sim-card h-100 border-0">
+                            <img src="assets/images/simulator-sd4-cockpit.jpg" loading="lazy" class="card-img-top"
+                                alt="General aviation cockpit">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold text-white mb-2">GA Trainer</h3>
+                                <p class="card-text text-white-75 small mb-3">
+                                    Perfect for beginners. Master takeoffs, landings, and navigation.
+                                </p>
+                                <a href="experiences.html" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="container-xxl py-5" id="pricing">
+            <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
+                <h2 class="h3 fw-bold text-navy mb-4">Pricing & Packages</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card price-card h-100">
+                            <div class="card-header text-white">Starter Flight</div>
+                            <div class="card-body">
+                                <p class="price mb-3">$59</p>
+                                <ul class="small mb-4 ps-3">
+                                    <li>20 minutes briefing</li>
+                                    <li>20 minutes simulator time</li>
+                                    <li>Beginner-friendly GA trainer</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-primary w-100">Choose Starter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card price-card h-100 featured">
+                            <div class="card-header text-white">Pilot Experience</div>
+                            <div class="card-body">
+                                <p class="price mb-3">$99</p>
+                                <ul class="small mb-4 ps-3">
+                                    <li>20 minutes briefing</li>
+                                    <li>40 minutes simulator time</li>
+                                    <li>Airliner or A320/737</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-primary w-100">Choose Pilot</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card price-card h-100">
+                            <div class="card-header text-white">Captain Pro</div>
+                            <div class="card-body">
+                                <p class="price mb-3">$149</p>
+                                <ul class="small mb-4 ps-3">
+                                    <li>30 minutes briefing</li>
+                                    <li>60 minutes simulator time</li>
+                                    <li>Full‑motion, procedures focus</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-primary w-100">Choose Captain</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking / Contact -->
+        <section class="container-xxl py-5" id="booking">
+            <span id="contact"></span>
+            <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
+                <h2 class="h3 fw-bold text-navy mb-3">Book Your Flight</h2>
+                <p class="mb-4">Send us a request and we’ll get back to you with availability.</p>
+
+                <form id="contactForm" class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="name" class="form-label">Full name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9+\-\s()]{7,}"
+                            required>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#successModal">
+                            Send Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="container-xxl py-5" id="location">
+            <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
+                <h2 class="h3 fw-bold text-navy mb-4">Find Us</h2>
+                <div class="ratio ratio-16x9 map-short rounded-4 overflow-hidden mb-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9710.040229611296!2d-6.2525388!3d53.4271589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671014f8a7f9b7%3A0x260fbf7e95f9b6c7!2sDublin%20Airport!5e0!3m2!1sen!2sie!4v1698681111111"
+                        class="w-100 h-100" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                        aria-label="Dublin Airport">
+                    </iframe>
+                </div>
+                <address class="mb-0">
+                    <strong>SkyCadet Flight Sim</strong><br>
+                    Dublin Airport (DUB)<br>
+                    Collinstown, Co. Dublin<br>
+                    K67 X4X5, Ireland<br>
+                    Tel: +1 234 567 890
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navy text-white py-4 mt-auto">
+        <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <div class="d-flex align-items-center gap-2">
+                <span class="logo-sc logo-invert">SC</span>
+                <span class="fw-semibold">SkyCadet Flight Sim</span>
+            </div>
+            <nav aria-label="Footer navigation">
+                <ul class="list-inline mb-0 small">
+                    <li class="list-inline-item me-3"><a class="link-light text-decoration-none"
+                            href="#pricing">Pricing</a>
+                    </li>
+                    <li class="list-inline-item me-3"><a class="link-light text-decoration-none"
+                            href="#booking">Book</a>
+                    </li>
+                    <li class="list-inline-item"><a class="link-light text-decoration-none"
+                            href="#location">Location</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="mb-0 small text-white-50">© 2025 SkyCadet. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="successModalLabel">Request sent</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thanks for your request! We’ll contact you shortly.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JavaScript Library -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
