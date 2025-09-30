@@ -448,3 +448,33 @@ footer .footer-brand .text-navy {
 .location-info .opening-times strong {
     font-weight: 700;
 }
+
+/* About section */
+.about-photo {
+    /* Scale responsively but stay equal width/height */
+    width: clamp(140px, 45vw, 220px);
+    height: clamp(140px, 45vw, 220px);
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+@media (min-width: 768px) {
+    .about-photo {
+        width: clamp(200px, 30vw, 280px);
+        height: clamp(200px, 30vw, 280px);
+    }
+}
+@media (min-width: 1200px) {
+    .about-photo {
+        width: clamp(240px, 24vw, 320px);
+        height: clamp(240px, 24vw, 320px);
+    }
+}
+
+/* Bigger About images on small devices */
+@media (max-width: 576px) {
+    .about-photo {
+        width: clamp(180px, 70vw, 240px);
+        height: clamp(180px, 70vw, 240px);
+    }
+}
