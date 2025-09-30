@@ -265,34 +265,36 @@ footer .footer-brand .text-navy {
 }
 
 /* Footer – center on small screens (incl. Mobile S 320px) */
-@media (max-width: 576px){
-  footer .container-xxl{
-    align-items: center !important; /* keep column but center items */
-    gap: 0.75rem;
-    text-align: center;            /* center text by default */
-  }
-  footer .container-xxl > .d-flex{
-    justify-content: center;       /* brand + descriptor */
-    text-align: center;
-    flex-wrap: wrap;               /* allow line wrap on very narrow screens */
-  }
-  footer nav{
-    width: 100%;
-  }
-  footer .social-links{
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-  }
-  footer p{
-    text-align: center;            /* attribution */
-    width: 100%;
-  }
+@media (max-width: 576px) {
+    footer .container-xxl {
+        align-items: center !important; /* keep column but center items */
+        gap: 0.75rem;
+        text-align: center; /* center text by default */
+    }
+    footer .container-xxl > .d-flex {
+        justify-content: center; /* brand + descriptor */
+        text-align: center;
+        flex-wrap: wrap; /* allow line wrap on very narrow screens */
+    }
+    footer nav {
+        width: 100%;
+    }
+    footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+    footer p {
+        text-align: center; /* attribution */
+        width: 100%;
+    }
 }
 
 /* Optional micro-tweak for ultra-narrow devices */
-@media (max-width: 360px){
-  footer .footer-brand{ font-size: 1.05rem; }
+@media (max-width: 360px) {
+    footer .footer-brand {
+        font-size: 1.05rem;
+    }
 }
 
 /* Small tweaks */
@@ -434,4 +436,15 @@ footer .footer-brand .text-navy {
         --bs-aspect-ratio: 50%;
         min-height: 220px; /* readable on phones */
     }
+}
+
+/* Location info: unify typography and spacing */
+.location-info address,
+.location-info .opening-times {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.location-info address strong,
+.location-info .opening-times strong {
+    font-weight: 700;
 }
