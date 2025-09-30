@@ -297,8 +297,7 @@
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
                     <div class="col-12">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#successModal">
+                        <button type="submit" class="btn btn-primary">
                             Send Request
                         </button>
                     </div>
@@ -363,7 +362,7 @@
                     Thanks for your request! We’ll contact you shortly.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
@@ -394,6 +393,22 @@
                     }
                 });
             });
+    </script>
+
+    <!-- JavaScript to show the modal only if the form is valid -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            if (this.checkValidity()) {
+                // Show the modal only if form is valid
+                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                successModal.show();
+                this.reset(); // Clear the form
+            } else {
+                this.reportValidity(); // Show validation errors
+            }
+        });
     </script>
 </body>
 
