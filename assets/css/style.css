@@ -389,6 +389,18 @@ footer .footer-brand .text-navy {
         width: clamp(180px, 70vw, 240px);
         /* height auto via base rule */
     }
+
+    /* Simulators: make carousels taller on mobile */
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 70%;
+    }
+}
+
+/* New: 576px–767.98px (sm) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 62%;
+    }
 }
 
 /* 768px–991.98px footer already above */
@@ -410,9 +422,9 @@ footer .footer-brand .text-navy {
         text-align: right;
     }
 
-    /* Make About images larger on tablets */
-    .about-photo {
-        width: clamp(220px, 36vw, 280px);
+    /* Simulators: taller carousels on tablets (md) */
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 56%;
     }
 }
 
@@ -436,11 +448,27 @@ footer .footer-brand .text-navy {
     .about-photo {
         width: clamp(260px, 28vw, 300px);
     }
+
+    /* Simulators: slightly taller on small laptops (lg) */
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 52%;
+    }
 }
 
 /* >= 1200px */
 @media (min-width: 1200px) {
     .about-photo {
         width: clamp(240px, 24vw, 320px);
+    }
+    /* Smaller carousels on xl screens */
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 46%;
+    }
+}
+
+/* New: >= 1400px (xxl) – even a bit smaller */
+@media (min-width: 1400px) {
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 40%;
     }
 }
