@@ -15,13 +15,34 @@
 /* Base */
 html,
 body {
-    height: 100%;
+    min-height: 100%;
 }
 body {
     font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
         Cantarell, "Helvetica Neue", Arial, sans-serif;
     color: var(--dark);
-    background-color: #fff;
+    position: relative; /* host fixed bg layer */
+    /* move layered background to a fixed pseudo-element to avoid stretch */
+    background-image: none;
+    background-color: #fff; /* fallback if bg layer fails */
+}
+
+/* Fixed background layer (prevents stretching on accordion expand) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.45)
+        ),
+        url("../images/white-cloud-sky-background.webp");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    will-change: transform; /* helps some mobile browsers */
 }
 
 /* Utilities */
