@@ -246,6 +246,22 @@ footer .footer-brand .text-navy {
     box-shadow: 0 0 0 0.25rem var(--social-ring);
 }
 
+/* Accordion – prevent focus ring from overflowing item (FAQ etc.) */
+.accordion:not(.accordion-flush) .accordion-item {
+    overflow: hidden; /* clip focus ring bleed */
+    border-radius: 0.75rem; /* smooth corners */
+    border: 1px solid var(--light);
+}
+.accordion .accordion-button:focus {
+    /* subtle brand ring that stays within the clipped item */
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Accordion – spacing between items (FAQ etc.) */
+.accordion:not(.accordion-flush) .accordion-item:not(:last-child) {
+    margin-bottom: 0.75rem; /* add space between cards */
+}
+
 /* Footer layout overrides */
 @media (min-width: 768px) and (max-width: 991.98px) {
     footer .container-xxl {
