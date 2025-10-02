@@ -189,6 +189,23 @@ footer .footer-brand .text-navy {
     color: rgba(255, 255, 255, 0.85) !important;
 }
 
+/* Hero – Carousel fade stability */
+.hero-carousel .carousel-inner {
+    overflow: hidden;
+}
+.hero-carousel .carousel-item,
+.hero-carousel .card-img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: opacity, transform;
+}
+/* Ensure opacity-only transition for fade and smooth timing */
+.carousel.carousel-fade .carousel-item {
+    transition-property: opacity;
+    transition-duration: 0.7s;
+}
+
 /* Social links */
 .social-links .social-link {
     display: inline-flex;
