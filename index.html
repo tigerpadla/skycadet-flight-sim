@@ -485,24 +485,25 @@
 
     <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
     <script>
-        document
-            .querySelectorAll(".navbar-collapse .nav-link")
-            .forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    let section = document.querySelector(e.target.getAttribute("href"));
-                    if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
-                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                        window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                            behavior: "smooth",
-                        });
-                        document
-                            .querySelector(".navbar-collapse")
-                            .classList.remove("show"); // Collapse navbar
-                    }
+        // Smooth scroll + reliably collapse navbar (includes Book Now CTA)
+        (() => {
+            const collapseEl = document.getElementById('mainNav');
+            const bsCollapse = collapseEl ? bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false }) : null;
+
+            document
+                .querySelectorAll('.navbar .nav-link[href^="#"], .navbar .btn-cta[href^="#"]')
+                .forEach((link) => {
+                    link.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        const section = href ? document.querySelector(href) : null;
+                        if (!section) return;
+
+                        e.preventDefault();
+                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        bsCollapse?.hide(); // reliably collapse burger menu
+                    });
                 });
-            });
+        })();
     </script>
 
     <!-- JavaScript to show the modal only if the form is valid -->
