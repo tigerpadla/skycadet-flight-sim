@@ -44,12 +44,12 @@ The website is multi-page, providing a clear and organized user journey from ini
 
 ## 🧑‍💻 User Experience (UX)
 
-### 🎯 Target Audience
+### Target Audience
 
 * **Aviation Enthusiasts & Beginners:** Individuals curious about flying who want to experience a realistic flight simulator for fun or preliminary training. 
 * **Parents & Families:** People looking for unique, safe, and exciting activities suitable for a wide range of ages. 
 
-### 📌 User Stories
+### User Stories
 
 The project was guided by user-centric goals, prioritized using the MoSCoW method. Key "Must-Have" stories include:
 
@@ -60,7 +60,7 @@ The project was guided by user-centric goals, prioritized using the MoSCoW metho
 * As an interested customer, I need a **booking/contact form** to make an inquiry.  
 * As a visitor, I want to find the business **location** easily via an embedded map and address. 
 
-### 🏁 Site Owner Goals
+### Site Owner Goals
 
 * Present the flight simulator center as a professional, safe, and thrilling destination.  
 * Ensure clear, intuitive navigation across all pages.  
@@ -94,7 +94,7 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 
 ---
 
-## Features
+## 🛠️ Features
 
 ### Existing Features (MVP)
 
@@ -120,23 +120,23 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 
 ---
 
-## Technologies Used
+## 💻 Technologies Used
 
-* **HTML5, CSS3, Bootstrap 5** 📝🎨⚡  
-* **Git & GitHub** 🗂️  
-* **Visual Studio Code** 🖥️  
-* **Google Fonts (Poppins)** 🔤  
-* **Font Awesome** 🌐  
-* **W3C & Jigsaw Validators** ✅
+* **HTML5, CSS3, Bootstrap 5**   
+* **Git & GitHub**   
+* **Visual Studio Code**   
+* **Google Fonts (Poppins)**  
+* **Font Awesome**   
+* **W3C & Jigsaw Validators** 
 
 ---
 
-## Testing
+## 🧪 Testing
 
-* Responsiveness across devices 📱💻  
-* Browser compatibility (Chrome, Firefox, Edge) 🌐  
-* HTML & CSS validation ✅  
-* Accessibility checks ♿
+* Responsiveness across devices  
+* Browser compatibility (Chrome, Firefox, Edge)   
+* HTML & CSS validation  
+* Accessibility checks 
 
 ---
 
@@ -148,26 +148,26 @@ The website is live at: [SkyCadet Flight Simulator](https://tigerpadla.github.io
 
 ## 🤖 AI-Assisted Development
 
-* Code generation, debugging, content optimization, logo & design assistance, documentation. 🎨📄⚡🐛✍️
+* Code generation, debugging, content optimization, logo & design assistance, documentation.
 
 ---
 
-## Credits
+## 🎖️ Credits
 
 ### Content
 * All text content was written specifically for this project. ✍️
 
 ### Media and Images
-* **Freepik:** [Boeing 737 Cockpit](https://www.freepik.com/) images. 🛫
-* **Pixabay:** [Airbus A320 Cockpit](https://pixabay.com/) images. 🛬
-* **JetPhotos:** [VIPER SD4 Cockpit](https://www.jetphotos.com/photo/10194298) image by Jakub Fedorowicz. 🛩️
-* **TomarkAero:** [Viper SD4 Aircraft](https://www.tomarkaero.com/) images used for exterior and cockpit shots. 🛩️
-* **Facebook:** Additional [Viper SD4 Cockpit](https://www.facebook.com/photo/?fbid=805851100331826&set=pcb.805854170331519) image. 🖼️
-* **Vliegles.nl:** [Airbus A320 Simulator](https://www.vliegles.nl/images/thumbnails/product_image-4835-1875x1055.jpeg) photo. ✈️
-* **Reuters:** [Boeing 737 Takeoff](https://www.reuters.com/resizer/v2/https%3A%2F%2Fcloudfront-us-east-2.images.arcpublishing.com%2Freuters%2FOBDQOVK36FPWVKE6LOB2PMG6HY.jpg?auth=ecd43f29b592fa72c5ad8caf5b5b7fcfe231c47edb8669fed873997bb86256d0&width=4226&quality=80) image. 🛫
-* **Wikimedia Commons:** [Aer Lingus A320](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Aer_Lingus_Airbus_A320_Lofting-1.jpg/1024px-Aer_Lingus_Airbus_A320_Lofting-1.jpg) and [Aerial Dublin](https://upload.wikimedia.org/wikipedia/commons/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg) photos. 🌆
-* **Squarespace CDN:** [Atlantic Sunset](https://images.squarespace-cdn.com/content/v1/5992ff526b8f5b29a7f3d45d/1580231682989-VRG6ZY3UPQ9WSVY0UTKL/20190912-_GAL9794-Edit.jpg) image. 🌅
-* **Aro.ie:** [Ross Castle](https://scdn.aro.ie/Sites/50/flightlink/uploads/images/FullLengthImages/Medium/Aerial_view__Ross_castle__Killarney_National_Park__Co_Kerry_Web_Size__2_.jpg) aerial view. 🏰
+* **Freepik:** [Boeing 737 Cockpit](https://www.freepik.com/) images. 
+* **Pixabay:** [Airbus A320 Cockpit](https://pixabay.com/) images. 
+* **JetPhotos:** [VIPER SD4 Cockpit](https://www.jetphotos.com/photo/10194298) image by Jakub Fedorowicz. 
+* **TomarkAero:** [Viper SD4 Aircraft](https://www.tomarkaero.com/) images used for exterior and cockpit shots. 
+* **Facebook:** Additional [Viper SD4 Cockpit](https://www.facebook.com/photo/?fbid=805851100331826&set=pcb.805854170331519) image.
+* **Vliegles.nl:** [Airbus A320 Simulator](https://www.vliegles.nl/images/thumbnails/product_image-4835-1875x1055.jpeg) photo. 
+* **Reuters:** [Boeing 737 Takeoff](https://www.reuters.com/resizer/v2/https%3A%2F%2Fcloudfront-us-east-2.images.arcpublishing.com%2Freuters%2FOBDQOVK36FPWVKE6LOB2PMG6HY.jpg?auth=ecd43f29b592fa72c5ad8caf5b5b7fcfe231c47edb8669fed873997bb86256d0&width=4226&quality=80) image. 
+* **Wikimedia Commons:** [Aer Lingus A320](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Aer_Lingus_Airbus_A320_Lofting-1.jpg/1024px-Aer_Lingus_Airbus_A320_Lofting-1.jpg) and [Aerial Dublin](https://upload.wikimedia.org/wikipedia/commons/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg) photos. 
+* **Squarespace CDN:** [Atlantic Sunset](https://images.squarespace-cdn.com/content/v1/5992ff526b8f5b29a7f3d45d/1580231682989-VRG6ZY3UPQ9WSVY0UTKL/20190912-_GAL9794-Edit.jpg) image. 
+* **Aro.ie:** [Ross Castle](https://scdn.aro.ie/Sites/50/flightlink/uploads/images/FullLengthImages/Medium/Aerial_view__Ross_castle__Killarney_National_Park__Co_Kerry_Web_Size__2_.jpg) aerial view. 
 
 ---
 
