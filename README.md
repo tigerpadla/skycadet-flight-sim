@@ -171,6 +171,6 @@ The website is live at: [SkyCadet Flight Simulator](https://tigerpadla.github.io
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 I would like to thank our **bootcamp facilitator** for their guidance and support throughout this project. I also extend my gratitude to the **Code Institute team** and the **NetApp team** for providing resources, mentorship, and inspiration. My personal background in aviation was a great source of motivation for bringing this flight simulator experience to life. ✈️
