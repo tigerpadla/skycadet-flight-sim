@@ -10,7 +10,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. [Project Overview](#project-overview)
 2. [User Experience (UX)](#user-experience-ux)
@@ -34,7 +34,7 @@
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project serves as a **portfolio piece** demonstrating proficiency in front-end web development technologies. The goal was to create a professional, engaging, and fully responsive website for a fictional flight simulator center. 🛫  
 
@@ -42,7 +42,7 @@ The website is multi-page, providing a clear and organized user journey from ini
 
 ---
 
-## 🧑‍💻 User Experience (UX)
+## User Experience (UX)
 
 ### Target Audience
 
@@ -70,7 +70,7 @@ The project was guided by user-centric goals, prioritized using the MoSCoW metho
 
 ---
 
-## 🎨 Design & Theme
+## Design & Theme
 
 The design is professional, modern, and immersive, evoking the feeling of a sleek aircraft cockpit and the open sky. 
 
@@ -94,7 +94,7 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 
 ---
 
-## 🛠️ Features
+## Features
 
 ### Existing Features (MVP)
 
@@ -120,7 +120,7 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 
 ---
 
-## 💻 Technologies Used
+## Technologies Used
 
 * **HTML5, CSS3, Bootstrap 5**   
 * **Git & GitHub**   
@@ -131,7 +131,7 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 
 ---
 
-## 🧪 Testing
+## Testing
 
 * Responsiveness across devices  
 * Browser compatibility (Chrome, Firefox, Edge)   
@@ -140,19 +140,19 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 The website is live at: [SkyCadet Flight Simulator](https://tigerpadla.github.io/skycadet-flight-sim/)
 
 ---
 
-## 🤖 AI-Assisted Development
+## AI-Assisted Development
 
 * Code generation, debugging, content optimization, logo & design assistance, documentation.
 
 ---
 
-## 🎖️ Credits
+## Credits
 
 ### Content
 * All text content was written specifically for this project. ✍️
