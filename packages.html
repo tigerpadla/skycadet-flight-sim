@@ -1,502 +1,1040 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>SkyCadet Flight Sim | Packages</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+            name="description"
+            content="Explore SkyCadet's simulators: Boeing 737NG, Airbus A320 and Viper SD-4."
+        />
+        <meta
+            name="keywords"
+            content="flight simulator, flight experiences, book flight simulator, beginner flight simulator, immersive simulator, flight simulator packages, safe flight adventure, flight simulation experience, aviation simulator, simulator booking"
+        />
 
-<head>
-    <title>SkyCadet Flight Sim | Packages</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Explore SkyCadet's simulators: Boeing 737NG, Airbus A320 and Viper SD-4.">
-    <meta name="keywords"
-        content="flight simulator, flight experiences, book flight simulator, beginner flight simulator, immersive simulator, flight simulator packages, safe flight adventure, flight simulation experience, aviation simulator, simulator booking">
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
 
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Bootstrap CSS v5.3.8 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Page-specific styling to emulate a clean product listing -->
+        <style>
+            .package-card {
+                border: 2px solid var(--light);
+                border-radius: 14px;
+                overflow: hidden;
+                box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+            .package-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+            }
 
-    <!-- Page-specific styling to emulate a clean product listing -->
-    <style>
-        .package-card {
-            border: 2px solid var(--light);
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 10px 26px rgba(0, 0, 0, .08);
-            transition: transform .2s ease, box-shadow .2s ease;
-        }
+            .package-card .ratio img {
+                object-fit: cover;
+            }
 
-        .package-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 14px 30px rgba(0, 0, 0, .12);
-        }
+            .price-badge {
+                background: var(--sky);
+                color: #fff;
+                font-weight: 700;
+                border-radius: 999px;
+                padding: 0.4rem 0.65rem;
+                box-shadow: 0 6px 14px rgba(52, 152, 219, 0.25);
+            }
 
-        .package-card .ratio img {
-            object-fit: cover;
-        }
+            .package-card .card-body .lead-small {
+                font-size: 0.95rem;
+                color: #6b7280;
+                /* muted */
+            }
 
-        .price-badge {
-            background: var(--sky);
-            color: #fff;
-            font-weight: 700;
-            border-radius: 999px;
-            padding: .4rem .65rem;
-            box-shadow: 0 6px 14px rgba(52, 152, 219, .25);
-        }
+            .experience-card img {
+                object-fit: cover;
+                border-radius: 0.75rem;
+            }
+        </style>
+    </head>
 
-        .package-card .card-body .lead-small {
-            font-size: .95rem;
-            color: #6b7280;
-            /* muted */
-        }
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header>
+            <!-- Navbar -->
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+            >
+                <div class="container-xxl">
+                    <a
+                        class="navbar-brand fw-bold d-flex align-items-center gap-2"
+                        href="index.html"
+                        aria-label="SkyCadet Home"
+                    >
+                        <img
+                            src="assets/images/logo.webp"
+                            alt="SkyCadet logo"
+                            class="brand-logo"
+                            height="44"
+                        />
+                        <span class="brand-font"
+                            ><span class="text-navy">Sky</span
+                            ><span class="text-sky">Cadet</span></span
+                        >
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav"
+                        aria-controls="mainNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul
+                            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center"
+                        >
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="simulators.html"
+                                    >Simulators</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="packages.html"
+                                    >Packages</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#pricing"
+                                    >Pricing</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about"
+                                    >About Me</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <a
+                                    class="btn btn-primary btn-cta"
+                                    href="#booking"
+                                    >Book Now</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        .experience-card img {
-            object-fit: cover;
-            border-radius: .75rem;
-        }
-    </style>
-</head>
+        <main id="main-content" class="pt-nav">
+            <section class="container-xxl py-5">
+                <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
+                    <h1 class="h2 fw-bold text-navy mb-2">Packages</h1>
+                    <p class="mb-4">
+                        Explore our most popular experiences. Click “View
+                        experiences” to expand details, or book straight away.
+                    </p>
 
-<body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-            <div class="container-xxl">
-                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html"
-                    aria-label="SkyCadet Home">
-                    <img src="assets/images/logo.webp" alt="SkyCadet logo" class="brand-logo" height="44">
-                    <span class="brand-font"><span class="text-navy">Sky</span><span
-                            class="text-sky">Cadet</span></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="simulators.html">Simulators</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="packages.html">Packages</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#about">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                        <li class="nav-item ms-lg-3">
-                            <a class="btn btn-primary btn-cta" href="#booking">Book Now</a>
+                    <div class="row g-4">
+                        <!-- Starter Flight -->
+                        <div class="col-md-6 col-lg-4">
+                            <div
+                                class="card package-card h-100 position-relative"
+                            >
+                                <div class="ratio ratio-4x3">
+                                    <img
+                                        src="assets/images/starter-flight-banner.webp"
+                                        alt="Viper SD-4 exterior"
+                                        class="w-100 h-100"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </div>
+                                <span
+                                    class="price-badge position-absolute top-0 end-0 m-3"
+                                    >$59</span
+                                >
+                                <div class="card-body">
+                                    <h2 class="h5 fw-bold text-navy mb-1">
+                                        Starter Flight
+                                    </h2>
+                                    <p class="lead-small mb-3">
+                                        Beginner-friendly GA trainer focused on
+                                        the basics of flight.
+                                    </p>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#starterExp"
+                                            aria-expanded="false"
+                                            aria-controls="starterExp"
+                                        >
+                                            View experiences
+                                        </button>
+                                    </div>
+                                    <div class="collapse mt-3" id="starterExp">
+                                        <div
+                                            class="card border-0 experience-card mb-4"
+                                        >
+                                            <div class="ratio ratio-16x9 mb-3">
+                                                <img
+                                                    src="assets/images/kerry-sightseeing-flight.webp"
+                                                    alt="Viper SD-4 cockpit"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <h3
+                                                class="h6 fw-bold text-navy mb-1"
+                                            >
+                                                Kerry Sightseeing Flight
+                                            </h3>
+                                            <p class="mb-2">
+                                                Scenic loop over County Kerry
+                                                with calm coastal and
+                                                countryside vistas. Ideal first
+                                                flight focused on fundamentals
+                                                and smooth handling.
+                                            </p>
+                                            <ul class="small mb-2 ps-3">
+                                                <li>
+                                                    <strong>Aircraft:</strong>
+                                                    Tomark Viper SD-4
+                                                </li>
+                                                <li>
+                                                    <strong>Duration:</strong>
+                                                    20 minutes flight + 20
+                                                    minutes briefing
+                                                </li>
+                                                <li>
+                                                    <strong>Departure:</strong>
+                                                    Kerry Airport (KIR)
+                                                </li>
+                                                <li>
+                                                    <strong>Route:</strong> KIR
+                                                    → Coastal/countryside loop →
+                                                    KIR
+                                                </li>
+                                                <li>
+                                                    <strong>Landing:</strong>
+                                                    Kerry Airport
+                                                </li>
+                                            </ul>
+                                            <ul class="small mb-3 ps-3">
+                                                <li>
+                                                    <em>Highlights:</em> Coastal
+                                                    views, rolling fields,
+                                                    gentle maneuvers, relaxed
+                                                    pace
+                                                </li>
+                                                <li>
+                                                    <em>Why it works:</em>
+                                                    Simple route,
+                                                    beginner-friendly,
+                                                    confidence-building
+                                                </li>
+                                            </ul>
+                                            <a
+                                                href="#booking"
+                                                class="btn btn-primary btn-sm"
+                                                >Book Now</a
+                                            >
+                                        </div>
+
+                                        <!-- New: Traffic Pattern Practice -->
+                                        <div
+                                            class="card border-0 experience-card"
+                                        >
+                                            <div class="ratio ratio-16x9 mb-3">
+                                                <img
+                                                    src="assets/images/traffic-pattern-practice.webp"
+                                                    alt="Viper SD-4 traffic pattern practice"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <h3
+                                                class="h6 fw-bold text-navy mb-1"
+                                            >
+                                                Traffic Pattern Practice
+                                            </h3>
+                                            <p class="mb-2">
+                                                Structured circuit work to
+                                                perfect takeoffs, landings,
+                                                spacing, and go-arounds,
+                                                reinforced by repeating
+                                                checklists to enhance
+                                                consistency
+                                            </p>
+                                            <ul class="small mb-2 ps-3">
+                                                <li>
+                                                    <strong>Aircraft:</strong>
+                                                    Tomark Viper SD-4
+                                                </li>
+                                                <li>
+                                                    <strong>Duration:</strong>
+                                                    20 minutes flight + 20
+                                                    minutes briefing
+                                                </li>
+                                                <li>
+                                                    <strong>Scenario:</strong>
+                                                    Standard left/right-hand
+                                                    patterns, base/final turns,
+                                                    go-around
+                                                </li>
+                                                <li>
+                                                    <strong>Field:</strong>
+                                                    Kerry (KIR) or comparable
+                                                    training airfield
+                                                </li>
+                                            </ul>
+                                            <ul class="small mb-3 ps-3">
+                                                <li>
+                                                    <em>Why it works:</em>
+                                                    Repetition builds muscle
+                                                    memory and landing
+                                                    confidence
+                                                </li>
+                                            </ul>
+                                            <a
+                                                href="#booking"
+                                                class="btn btn-primary btn-sm"
+                                                >Book Now</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pilot Experience -->
+                        <div class="col-md-6 col-lg-4">
+                            <div
+                                class="card package-card h-100 position-relative"
+                            >
+                                <div class="ratio ratio-4x3">
+                                    <img
+                                        src="assets/images/pilot-experience-banner.webp"
+                                        alt="Airbus A320 cockpit"
+                                        class="w-100 h-100"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </div>
+                                <span
+                                    class="price-badge position-absolute top-0 end-0 m-3"
+                                    >$99</span
+                                >
+                                <div class="card-body">
+                                    <h2 class="h5 fw-bold text-navy mb-1">
+                                        Pilot Experience
+                                    </h2>
+                                    <p class="lead-small mb-3">
+                                        Step into an airliner and try automation
+                                        and procedures.
+                                    </p>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#pilotExp"
+                                            aria-expanded="false"
+                                            aria-controls="pilotExp"
+                                        >
+                                            View experiences
+                                        </button>
+                                    </div>
+                                    <div class="collapse mt-3" id="pilotExp">
+                                        <!-- Dublin Sightseeing Flight -->
+                                        <div
+                                            class="card border-0 experience-card mb-4"
+                                        >
+                                            <div class="ratio ratio-16x9 mb-3">
+                                                <img
+                                                    src="assets/images/dublin-sightseeing-flight.webp"
+                                                    alt="737 or A320 sightseeing around Dublin"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <h3
+                                                class="h6 fw-bold text-navy mb-1"
+                                            >
+                                                Dublin Sightseeing Flight
+                                            </h3>
+                                            <p class="mb-2">
+                                                Relaxed tour of Dublin and
+                                                coastline. Hand fly the
+                                                departure, then try managed
+                                                modes for a smooth return and
+                                                visual approach.
+                                            </p>
+                                            <ul class="small mb-2 ps-3">
+                                                <li>
+                                                    <strong>Aircraft:</strong>
+                                                    Boeing 737NG or Airbus A320
+                                                </li>
+                                                <li>
+                                                    <strong>Duration:</strong>
+                                                    40 minutes flight + 20
+                                                    minutes briefing
+                                                </li>
+                                                <li>
+                                                    <strong>Departure:</strong>
+                                                    Dublin Airport (DUB)
+                                                </li>
+                                                <li>
+                                                    <strong>Route:</strong> DUB
+                                                    → Dublin Bay → City orbit →
+                                                    Howth Head → Return DUB
+                                                </li>
+                                                <li>
+                                                    <strong>Landing:</strong>
+                                                    Dublin Airport
+                                                </li>
+                                            </ul>
+                                            <ul class="small mb-3 ps-3">
+                                                <li>
+                                                    <em>Highlights:</em> City
+                                                    skyline, coastal views,
+                                                    balanced manual/automation
+                                                    flying
+                                                </li>
+                                                <li>
+                                                    <em>Why it works:</em>
+                                                    Iconic scenery and a simple,
+                                                    satisfying route
+                                                </li>
+                                            </ul>
+                                            <a
+                                                href="#booking"
+                                                class="btn btn-primary btn-sm"
+                                                >Book Now</a
+                                            >
+                                        </div>
+
+                                        <!-- Wild Atlantic Way Sunset Flight -->
+                                        <div
+                                            class="card border-0 experience-card"
+                                        >
+                                            <div class="ratio ratio-16x9 mb-3">
+                                                <img
+                                                    src="assets/images/wild-atlantic-way-flight.webp"
+                                                    alt="A320 along Atlantic coast at sunset"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <h3
+                                                class="h6 fw-bold text-navy mb-1"
+                                            >
+                                                Wild Atlantic Way Sunset Flight
+                                            </h3>
+                                            <p class="mb-2">
+                                                Golden-hour coastal adventure
+                                                along Ireland's rugged Atlantic
+                                                edge with a photogenic sunset
+                                                arrival.
+                                            </p>
+                                            <ul class="small mb-2 ps-3">
+                                                <li>
+                                                    <strong>Aircraft:</strong>
+                                                    Boeing 737NG or Airbus A320
+                                                </li>
+                                                <li>
+                                                    <strong>Duration:</strong>
+                                                    40 minutes flight + 20
+                                                    minutes briefing
+                                                </li>
+                                                <li>
+                                                    <strong>Departure:</strong>
+                                                    Shannon Airport (SNN)
+                                                </li>
+                                                <li>
+                                                    <strong>Route:</strong> SNN
+                                                    → Cliffs of Moher → Doolin
+                                                    Coastline → Loop back → SNN
+                                                </li>
+                                                <li>
+                                                    <strong>Landing:</strong>
+                                                    Shannon Airport
+                                                </li>
+                                            </ul>
+                                            <ul class="small mb-3 ps-3">
+                                                <li>
+                                                    <em>Highlights:</em> Ocean
+                                                    views, iconic Cliffs of
+                                                    Moher low-level fly-by,
+                                                    rolling countryside, sunset
+                                                    skies
+                                                </li>
+                                                <li>
+                                                    <em>Why it works:</em>
+                                                    Instagrammable scenery,
+                                                    romantic sunset mood, simple
+                                                    one-leg route
+                                                </li>
+                                            </ul>
+                                            <a
+                                                href="#booking"
+                                                class="btn btn-primary btn-sm"
+                                                >Book Now</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Captain Pro -->
+                        <div class="col-lg-4">
+                            <div
+                                class="card package-card h-100 position-relative"
+                            >
+                                <div class="ratio ratio-4x3">
+                                    <img
+                                        src="assets/images/captain-pro-banner.webp"
+                                        alt="Boeing 737 cockpit"
+                                        class="w-100 h-100"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </div>
+                                <span
+                                    class="price-badge position-absolute top-0 end-0 m-3"
+                                    >$149</span
+                                >
+                                <div class="card-body">
+                                    <h2 class="h5 fw-bold text-navy mb-1">
+                                        Captain Pro
+                                    </h2>
+                                    <p class="lead-small mb-3">
+                                        Full airline flows and navigation — pick
+                                        your scenario.
+                                    </p>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#captainExp"
+                                            aria-expanded="false"
+                                            aria-controls="captainExp"
+                                        >
+                                            View experiences
+                                        </button>
+                                    </div>
+                                    <div class="collapse mt-3" id="captainExp">
+                                        <!-- 737 DUB→ORK -->
+                                        <div
+                                            class="card border-0 experience-card mb-4"
+                                        >
+                                            <div class="ratio ratio-16x9 mb-3">
+                                                <img
+                                                    src="assets/images/ryanair-737-dublin-cork-flight.webp"
+                                                    alt="Ryanair 737 navigation flight"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <h3
+                                                class="h6 fw-bold text-navy mb-1"
+                                            >
+                                                Ryanair Navigational Flight -
+                                                Dublin → Cork
+                                            </h3>
+                                            <p class="mb-2">
+                                                Short airline sector with full
+                                                preflight, FMC setup, SID/STAR,
+                                                and managed arrival into Cork.
+                                            </p>
+                                            <ul class="small mb-2 ps-3">
+                                                <li>
+                                                    <strong>Aircraft:</strong>
+                                                    Boeing 737NG
+                                                </li>
+                                                <li>
+                                                    <strong>Duration:</strong>
+                                                    60 minutes flight + 30
+                                                    minutes briefing
+                                                </li>
+                                                <li>
+                                                    <strong>Departure:</strong>
+                                                    Dublin (DUB)
+                                                </li>
+                                                <li>
+                                                    <strong>Route:</strong> DUB
+                                                    SID → E-route → ORK STAR
+                                                </li>
+                                                <li>
+                                                    <strong>Landing:</strong>
+                                                    Cork (ILS/RNAV)
+                                                </li>
+                                            </ul>
+                                            <ul class="small mb-3 ps-3">
+                                                <li>
+                                                    <em>Highlights:</em> SOPs,
+                                                    VNAV/LNAV, realistic
+                                                    gate-to-gate flow
+                                                </li>
+                                                <li>
+                                                    <em>Why it works:</em>
+                                                    Authentic, achievable sector
+                                                    with clear milestones
+                                                </li>
+                                            </ul>
+                                            <a
+                                                href="#booking"
+                                                class="btn btn-primary btn-sm"
+                                                >Book Now</a
+                                            >
+                                        </div>
+
+                                        <!-- A320 DUB→LON -->
+                                        <div
+                                            class="card border-0 experience-card mb-4"
+                                        >
+                                            <div class="ratio ratio-16x9 mb-3">
+                                                <img
+                                                    src="assets/images/aer-lingus-a320-dublin-london-flight.webp"
+                                                    alt="Aer Lingus A320 navigation flight"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <h3
+                                                class="h6 fw-bold text-navy mb-1"
+                                            >
+                                                Aer Lingus Navigational Flight -
+                                                Dublin → London
+                                            </h3>
+                                            <p class="mb-2">
+                                                Classic hop across the Irish Sea
+                                                using managed climb/descent with
+                                                an ILS into a busy London
+                                                airspace.
+                                            </p>
+                                            <ul class="small mb-2 ps-3">
+                                                <li>
+                                                    <strong>Aircraft:</strong>
+                                                    Airbus A320
+                                                </li>
+                                                <li>
+                                                    <strong>Duration:</strong>
+                                                    60 minutes flight + 30
+                                                    minutes briefing
+                                                </li>
+                                                <li>
+                                                    <strong>Departure:</strong>
+                                                    Dublin (DUB)
+                                                </li>
+                                                <li>
+                                                    <strong>Route:</strong> DUB
+                                                    → LON airway segment with
+                                                    STAR
+                                                </li>
+                                                <li>
+                                                    <strong>Landing:</strong>
+                                                    London (ILS)
+                                                </li>
+                                            </ul>
+                                            <ul class="small mb-3 ps-3">
+                                                <li>
+                                                    <em>Highlights:</em> MCDU
+                                                    workflow, managed vs
+                                                    selected modes,
+                                                    busy-airspace approach
+                                                </li>
+                                                <li>
+                                                    <em>Why it works:</em>
+                                                    Teaches Airbus philosophy
+                                                    with a rewarding arrival
+                                                </li>
+                                            </ul>
+                                            <a
+                                                href="#booking"
+                                                class="btn btn-primary btn-sm"
+                                                >Book Now</a
+                                            >
+                                        </div>
+
+                                        <!-- A320 Hudson Challenge -->
+                                        <div
+                                            class="card border-0 experience-card"
+                                        >
+                                            <div class="ratio ratio-16x9 mb-3">
+                                                <img
+                                                    src="assets/images/hudson-miracle-a320-flight.webp"
+                                                    alt="A320 Hudson Miracle challenge"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <h3
+                                                class="h6 fw-bold text-navy mb-1"
+                                            >
+                                                Challenge - “Hudson Miracle”
+                                            </h3>
+                                            <p class="mb-2">
+                                                Scenario-based training inspired
+                                                by the Hudson River ditching:
+                                                rapid ECAM, crew coordination,
+                                                and glide energy management.
+                                            </p>
+                                            <ul class="small mb-2 ps-3">
+                                                <li>
+                                                    <strong>Aircraft:</strong>
+                                                    Airbus A320
+                                                </li>
+                                                <li>
+                                                    <strong>Duration:</strong>
+                                                    60 minutes flight + 30
+                                                    minutes briefing
+                                                </li>
+                                                <li>
+                                                    <strong>Scenario:</strong>
+                                                    Dual-engine failure due to
+                                                    bird strike shortly after
+                                                    take-off; handle ECAM,
+                                                    configure, and plan a safe
+                                                    outcome
+                                                </li>
+                                                <li>
+                                                    <strong>Approach:</strong>
+                                                    Ditching demonstration or
+                                                    diversion plan discussion
+                                                </li>
+                                            </ul>
+                                            <ul class="small mb-3 ps-3">
+                                                <li>
+                                                    <em>Why it works:</em>
+                                                    Builds decisiveness and
+                                                    systems discipline under
+                                                    pressure
+                                                </li>
+                                            </ul>
+                                            <a
+                                                href="#booking"
+                                                class="btn btn-primary btn-sm"
+                                                >Book Now</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Booking / Contact -->
+            <section class="container-xxl py-5" id="booking">
+                <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
+                    <h2 class="h3 fw-bold text-navy mb-3">Book Your Flight</h2>
+                    <p class="mb-4">
+                        Send us a request and we’ll get back to you with
+                        availability.
+                    </p>
+
+                    <form id="contactForm" class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <label for="name" class="form-label"
+                                >Full name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                required
+                            />
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <label for="email" class="form-label"
+                                >Email address</label
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="phone"
+                                name="phone"
+                                pattern="[0-9+\-\s()]{7,}"
+                                autocomplete="tel"
+                                required
+                            />
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label"
+                                >Message</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="message"
+                                name="message"
+                                rows="4"
+                                autocomplete="off"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                                Send Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-navy text-white py-4 mt-auto">
+            <div
+                class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
+            >
+                <div class="d-flex align-items-center gap-2">
+                    <span class="brand-font footer-brand"
+                        ><span class="text-navy">Sky</span
+                        ><span class="text-sky">Cadet</span></span
+                    >
+                    <span class="fw-semibold">Flight Simulator Center</span>
+                </div>
+                <nav aria-label="Social media">
+                    <ul class="list-inline social-links mb-0">
+                        <li class="list-inline-item me-3">
+                            <a
+                                class="social-link"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram (opens in a new tab)"
+                            >
+                                <i
+                                    class="fa-brands fa-instagram"
+                                    aria-hidden="true"
+                                ></i
+                                ><span class="visually-hidden">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item me-3">
+                            <a
+                                class="social-link"
+                                href="https://x.com/?lang=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="X (opens in a new tab)"
+                            >
+                                <i
+                                    class="fa-brands fa-x-twitter"
+                                    aria-hidden="true"
+                                ></i
+                                ><span class="visually-hidden">X</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                class="social-link"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook (opens in a new tab)"
+                            >
+                                <i
+                                    class="fa-brands fa-facebook"
+                                    aria-hidden="true"
+                                ></i
+                                ><span class="visually-hidden">Facebook</span>
+                            </a>
                         </li>
                     </ul>
-                </div>
+                </nav>
+                <p class="mb-0 small text-white-50">
+                    © 2025 SkyCadet — Built by Maksym Karleichuk
+                    <a
+                        class="link-light text-decoration-none"
+                        href="https://github.com/tigerpadla"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Maksym Karleichuk on GitHub (opens in a new tab)"
+                    >
+                        <i class="fa-brands fa-github" aria-hidden="true"></i
+                        ><span class="visually-hidden">GitHub</span>
+                    </a>
+                </p>
             </div>
-        </nav>
-    </header>
+        </footer>
 
-    <main class="pt-nav">
-        <section class="container-xxl py-5">
-            <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
-                <h1 class="h2 fw-bold text-navy mb-2">Packages</h1>
-                <p class="mb-4">Explore our most popular experiences. Click “View experiences” to expand details, or
-                    book straight away.</p>
-
-                <div class="row g-4">
-                    <!-- Starter Flight -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card package-card h-100 position-relative">
-                            <div class="ratio ratio-4x3">
-                                <img src="assets/images/starter-flight-banner.webp" alt="Viper SD-4 exterior"
-                                    class="w-100 h-100">
-                            </div>
-                            <span class="price-badge position-absolute top-0 end-0 m-3">$59</span>
-                            <div class="card-body">
-                                <h2 class="h5 fw-bold text-navy mb-1">Starter Flight</h2>
-                                <p class="lead-small mb-3">Beginner-friendly GA trainer focused on the basics of flight.
-                                </p>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#starterExp" aria-expanded="false" aria-controls="starterExp">
-                                        View experiences
-                                    </button>
-                                </div>
-                                <div class="collapse mt-3" id="starterExp">
-                                    <div class="card border-0 experience-card mb-4">
-                                        <div class="ratio ratio-16x9 mb-3">
-                                            <img src="assets/images/kerry-sightseeing-flight.webp"
-                                                alt="Viper SD-4 cockpit">
-                                        </div>
-                                        <h3 class="h6 fw-bold text-navy mb-1">Kerry Sightseeing Flight</h3>
-                                        <p class="mb-2">Scenic loop over County Kerry with calm coastal and countryside
-                                            vistas. Ideal first flight focused on fundamentals and smooth handling.</p>
-                                        <ul class="small mb-2 ps-3">
-                                            <li><strong>Aircraft:</strong> Tomark Viper SD-4</li>
-                                            <li><strong>Duration:</strong> 20 minutes flight + 20 minutes briefing</li>
-                                            <li><strong>Departure:</strong> Kerry Airport (KIR)</li>
-                                            <li><strong>Route:</strong> KIR → Coastal/countryside loop → KIR</li>
-                                            <li><strong>Landing:</strong> Kerry Airport</li>
-                                        </ul>
-                                        <ul class="small mb-3 ps-3">
-                                            <li><em>Highlights:</em> Coastal views, rolling fields, gentle maneuvers,
-                                                relaxed pace</li>
-                                            <li><em>Why it works:</em> Simple route, beginner-friendly,
-                                                confidence-building</li>
-                                        </ul>
-                                        <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
-                                    </div>
-
-                                    <!-- New: Traffic Pattern Practice -->
-                                    <div class="card border-0 experience-card">
-                                        <div class="ratio ratio-16x9 mb-3">
-                                            <img src="assets/images/traffic-pattern-practice.webp"
-                                                alt="Viper SD-4 traffic pattern practice">
-                                        </div>
-                                        <h3 class="h6 fw-bold text-navy mb-1">Traffic Pattern Practice</h3>
-                                        <p class="mb-2">Structured circuit work to perfect takeoffs, landings, spacing,
-                                            and go-arounds, reinforced by repeating checklists to enhance consistency
-                                        </p>
-                                        <ul class="small mb-2 ps-3">
-                                            <li><strong>Aircraft:</strong> Tomark Viper SD-4</li>
-                                            <li><strong>Duration:</strong> 20 minutes flight + 20 minutes briefing</li>
-                                            <li><strong>Scenario:</strong> Standard left/right-hand patterns, base/final
-                                                turns, go-around</li>
-                                            <li><strong>Field:</strong> Kerry (KIR) or comparable training airfield</li>
-                                        </ul>
-                                        <ul class="small mb-3 ps-3">
-                                            <li><em>Why it works:</em> Repetition builds muscle memory and landing
-                                                confidence</li>
-                                        </ul>
-                                        <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Success Modal -->
+        <div
+            class="modal fade"
+            id="successModal"
+            tabindex="-1"
+            aria-labelledby="successModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="successModalLabel">
+                            Request sent
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
                     </div>
-
-                    <!-- Pilot Experience -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card package-card h-100 position-relative">
-                            <div class="ratio ratio-4x3">
-                                <img src="assets/images/pilot-experience-banner.webp" alt="Airbus A320 cockpit"
-                                    class="w-100 h-100">
-                            </div>
-                            <span class="price-badge position-absolute top-0 end-0 m-3">$99</span>
-                            <div class="card-body">
-                                <h2 class="h5 fw-bold text-navy mb-1">Pilot Experience</h2>
-                                <p class="lead-small mb-3">Step into an airliner and try automation and procedures.</p>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#pilotExp" aria-expanded="false" aria-controls="pilotExp">
-                                        View experiences
-                                    </button>
-                                </div>
-                                <div class="collapse mt-3" id="pilotExp">
-
-                                    <!-- Dublin Sightseeing Flight -->
-                                    <div class="card border-0 experience-card mb-4">
-                                        <div class="ratio ratio-16x9 mb-3">
-                                            <img src="assets/images/dublin-sightseeing-flight.webp"
-                                                alt="737 or A320 sightseeing around Dublin">
-                                        </div>
-                                        <h3 class="h6 fw-bold text-navy mb-1">Dublin Sightseeing Flight</h3>
-                                        <p class="mb-2">Relaxed tour of Dublin and coastline. Hand fly the departure,
-                                            then try managed modes for a smooth return and visual approach.</p>
-                                        <ul class="small mb-2 ps-3">
-                                            <li><strong>Aircraft:</strong> Boeing 737NG or Airbus A320</li>
-                                            <li><strong>Duration:</strong> 40 minutes flight + 20 minutes briefing</li>
-                                            <li><strong>Departure:</strong> Dublin Airport (DUB)</li>
-                                            <li><strong>Route:</strong> DUB → Dublin Bay → City orbit → Howth Head →
-                                                Return DUB</li>
-                                            <li><strong>Landing:</strong> Dublin Airport</li>
-                                        </ul>
-                                        <ul class="small mb-3 ps-3">
-                                            <li><em>Highlights:</em> City skyline, coastal views, balanced
-                                                manual/automation flying</li>
-                                            <li><em>Why it works:</em> Iconic scenery and a simple, satisfying route
-                                            </li>
-                                        </ul>
-                                        <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
-                                    </div>
-
-                                    <!-- Wild Atlantic Way Sunset Flight -->
-                                    <div class="card border-0 experience-card">
-                                        <div class="ratio ratio-16x9 mb-3">
-                                            <img src="assets/images/wild-atlantic-way-flight.webp"
-                                                alt="A320 along Atlantic coast at sunset">
-                                        </div>
-                                        <h3 class="h6 fw-bold text-navy mb-1">Wild Atlantic Way Sunset Flight</h3>
-                                        <p class="mb-2">Golden-hour coastal adventure along Ireland's rugged Atlantic
-                                            edge with a photogenic sunset arrival.</p>
-                                        <ul class="small mb-2 ps-3">
-                                            <li><strong>Aircraft:</strong> Boeing 737NG or Airbus A320</li>
-                                            <li><strong>Duration:</strong> 40 minutes flight + 20 minutes briefing</li>
-                                            <li><strong>Departure:</strong> Shannon Airport (SNN)</li>
-                                            <li><strong>Route:</strong> SNN → Cliffs of Moher → Doolin Coastline → Loop
-                                                back → SNN</li>
-                                            <li><strong>Landing:</strong> Shannon Airport</li>
-                                        </ul>
-                                        <ul class="small mb-3 ps-3">
-                                            <li><em>Highlights:</em> Ocean views, iconic Cliffs of Moher low-level
-                                                fly-by, rolling countryside, sunset skies</li>
-                                            <li><em>Why it works:</em> Instagrammable scenery, romantic sunset mood,
-                                                simple one-leg route</li>
-                                        </ul>
-                                        <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal-body">
+                        Thanks for your request! We'll contact you shortly.
                     </div>
-
-                    <!-- Captain Pro -->
-                    <div class="col-lg-4">
-                        <div class="card package-card h-100 position-relative">
-                            <div class="ratio ratio-4x3">
-                                <img src="assets/images/captain-pro-banner.webp" alt="Boeing 737 cockpit"
-                                    class="w-100 h-100">
-                            </div>
-                            <span class="price-badge position-absolute top-0 end-0 m-3">$149</span>
-                            <div class="card-body">
-                                <h2 class="h5 fw-bold text-navy mb-1">Captain Pro</h2>
-                                <p class="lead-small mb-3">Full airline flows and navigation — pick your scenario.</p>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#captainExp" aria-expanded="false" aria-controls="captainExp">
-                                        View experiences
-                                    </button>
-                                </div>
-                                <div class="collapse mt-3" id="captainExp">
-                                    <!-- 737 DUB→ORK -->
-                                    <div class="card border-0 experience-card mb-4">
-                                        <div class="ratio ratio-16x9 mb-3">
-                                            <img src="assets/images/ryanair-737-dublin-cork-flight.webp"
-                                                alt="Ryanair 737 navigation flight">
-                                        </div>
-                                        <h3 class="h6 fw-bold text-navy mb-1">Ryanair Navigational Flight - Dublin →
-                                            Cork</h3>
-                                        <p class="mb-2">Short airline sector with full preflight, FMC setup, SID/STAR,
-                                            and managed arrival into Cork.</p>
-                                        <ul class="small mb-2 ps-3">
-                                            <li><strong>Aircraft:</strong> Boeing 737NG</li>
-                                            <li><strong>Duration:</strong> 60 minutes flight + 30 minutes briefing</li>
-                                            <li><strong>Departure:</strong> Dublin (DUB)</li>
-                                            <li><strong>Route:</strong> DUB SID → E-route → ORK STAR</li>
-                                            <li><strong>Landing:</strong> Cork (ILS/RNAV)</li>
-                                        </ul>
-                                        <ul class="small mb-3 ps-3">
-                                            <li><em>Highlights:</em> SOPs, VNAV/LNAV, realistic gate-to-gate flow</li>
-                                            <li><em>Why it works:</em> Authentic, achievable sector with clear
-                                                milestones</li>
-                                        </ul>
-                                        <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
-                                    </div>
-
-                                    <!-- A320 DUB→LON -->
-                                    <div class="card border-0 experience-card mb-4">
-                                        <div class="ratio ratio-16x9 mb-3">
-                                            <img src="assets/images/aer-lingus-a320-dublin-london-flight.webp"
-                                                alt="Aer Lingus A320 navigation flight">
-                                        </div>
-                                        <h3 class="h6 fw-bold text-navy mb-1">Aer Lingus Navigational Flight - Dublin →
-                                            London
-                                        </h3>
-                                        <p class="mb-2">Classic hop across the Irish Sea using managed climb/descent
-                                            with an ILS into a busy London airspace.</p>
-                                        <ul class="small mb-2 ps-3">
-                                            <li><strong>Aircraft:</strong> Airbus A320</li>
-                                            <li><strong>Duration:</strong> 60 minutes flight + 30 minutes briefing</li>
-                                            <li><strong>Departure:</strong> Dublin (DUB)</li>
-                                            <li><strong>Route:</strong> DUB → LON airway segment with STAR</li>
-                                            <li><strong>Landing:</strong> London (ILS)</li>
-                                        </ul>
-                                        <ul class="small mb-3 ps-3">
-                                            <li><em>Highlights:</em> MCDU workflow, managed vs selected modes,
-                                                busy-airspace approach</li>
-                                            <li><em>Why it works:</em> Teaches Airbus philosophy with a rewarding
-                                                arrival</li>
-                                        </ul>
-                                        <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
-                                    </div>
-
-                                    <!-- A320 Hudson Challenge -->
-                                    <div class="card border-0 experience-card">
-                                        <div class="ratio ratio-16x9 mb-3">
-                                            <img src="assets/images/hudson-miracle-a320-flight.webp"
-                                                alt="A320 Hudson Miracle challenge">
-                                        </div>
-                                        <h3 class="h6 fw-bold text-navy mb-1">Challenge - “Hudson Miracle”</h3>
-                                        <p class="mb-2">Scenario-based training inspired by the Hudson River ditching:
-                                            rapid ECAM, crew coordination, and glide energy management.</p>
-                                        <ul class="small mb-2 ps-3">
-                                            <li><strong>Aircraft:</strong> Airbus A320</li>
-                                            <li><strong>Duration:</strong> 60 minutes flight + 30 minutes briefing</li>
-                                            <li><strong>Scenario:</strong> Dual-engine failure due to bird strike
-                                                shortly after take-off; handle
-                                                ECAM, configure, and plan a safe outcome</li>
-                                            <li><strong>Approach:</strong> Ditching demonstration or diversion plan
-                                                discussion</li>
-                                        </ul>
-                                        <ul class="small mb-3 ps-3">
-                                            <li><em>Why it works:</em> Builds decisiveness and systems discipline under
-                                                pressure</li>
-                                        </ul>
-                                        <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                        >
+                            OK
+                        </button>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Booking / Contact -->
-        <section class="container-xxl py-5" id="booking">
-            <span id="contact"></span>
-            <div class="bg-panel p-4 p-md-5 rounded-4 shadow-sm">
-                <h2 class="h3 fw-bold text-navy mb-3">Book Your Flight</h2>
-                <p class="mb-4">Send us a request and we’ll get back to you with availability.</p>
-
-                <form id="contactForm" class="row g-3">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <label for="name" class="form-label">Full name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4">
-                        <label for="phone" class="form-label">Phone</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9+\-\s()]{7,}"
-                            required>
-                    </div>
-                    <div class="col-12">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Send Request</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-navy text-white py-4 mt-auto">
-        <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-            <div class="d-flex align-items-center gap-2">
-                <span class="brand-font footer-brand"><span class="text-navy">Sky</span><span
-                        class="text-sky">Cadet</span></span>
-                <span class="fw-semibold">Flight Simulator Center</span>
-            </div>
-            <nav aria-label="Social media">
-                <ul class="list-inline social-links mb-0">
-                    <li class="list-inline-item me-3">
-                        <a class="social-link" href="https://www.instagram.com/" target="_blank"
-                            rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)">
-                            <i class="fa-brands fa-instagram" aria-hidden="true"></i><span
-                                class="visually-hidden">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item me-3">
-                        <a class="social-link" href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer"
-                            aria-label="X (opens in a new tab)">
-                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span
-                                class="visually-hidden">X</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link" href="https://www.facebook.com/" target="_blank"
-                            rel="noopener noreferrer" aria-label="Facebook (opens in a new tab)">
-                            <i class="fa-brands fa-facebook" aria-hidden="true"></i><span
-                                class="visually-hidden">Facebook</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="mb-0 small text-white-50">
-                © 2025 SkyCadet — Built by Maksym Karleichuk
-                <a class="link-light text-decoration-none" href="https://github.com/tigerpadla" target="_blank"
-                    rel="noopener noreferrer" aria-label="Maksym Karleichuk on GitHub (opens in a new tab)">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i><span class="visually-hidden">GitHub</span>
-                </a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Success Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="successModalLabel">Request sent</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">Thanks for your request! We'll contact you shortly.</div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap JavaScript Library -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript Library -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/478abd1665.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/478abd1665.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-    <script>
-        // Smooth scroll + reliably collapse navbar for in-page actions
-        (() => {
-            const collapseEl = document.getElementById('mainNav');
-            const bsCollapse = collapseEl ? bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false }) : null;
+        <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+        <script>
+            // Smooth scroll + reliably collapse navbar for in-page actions
+            (() => {
+                const collapseEl = document.getElementById("mainNav");
+                const bsCollapse = collapseEl
+                    ? bootstrap.Collapse.getOrCreateInstance(collapseEl, {
+                          toggle: false,
+                      })
+                    : null;
 
-            document
-                .querySelectorAll('.navbar .nav-link[href^="#"], .navbar .btn-cta[href^="#"]')
-                .forEach((link) => {
-                    link.addEventListener('click', function (e) {
-                        const href = this.getAttribute('href');
-                        const section = href ? document.querySelector(href) : null;
-                        if (!section) return;
+                document
+                    .querySelectorAll(
+                        '.navbar .nav-link[href^="#"], .navbar .btn-cta[href^="#"]'
+                    )
+                    .forEach((link) => {
+                        link.addEventListener("click", function (e) {
+                            const href = this.getAttribute("href");
+                            const section = href
+                                ? document.querySelector(href)
+                                : null;
+                            if (!section) return;
 
-                        e.preventDefault();
-                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        bsCollapse?.hide();
+                            e.preventDefault();
+                            section.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            });
+                            bsCollapse?.hide();
+                        });
                     });
+            })();
+        </script>
+
+        <!-- JavaScript to show the modal only if the form is valid -->
+        <script>
+            // Show success modal only if the form is valid
+            document
+                .getElementById("contactForm")
+                ?.addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    if (this.checkValidity()) {
+                        const successModal = new bootstrap.Modal(
+                            document.getElementById("successModal")
+                        );
+                        successModal.show();
+                        this.reset(); // Clear the form
+                    } else {
+                        this.reportValidity(); // Show validation errors
+                    }
                 });
-        })();
-    </script>
-
-    <!-- JavaScript to show the modal only if the form is valid -->
-    <script>
-        // Show success modal only if the form is valid
-        document.getElementById('contactForm')?.addEventListener('submit', function (event) {
-            event.preventDefault();
-            if (this.checkValidity()) {
-                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                successModal.show();
-                this.reset(); // Clear the form
-            } else {
-                this.reportValidity(); // Show validation errors
-            }
-        });
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>

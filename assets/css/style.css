@@ -283,26 +283,6 @@ footer .footer-brand .text-navy {
     margin-bottom: 0.75rem; /* add space between cards */
 }
 
-/* Footer layout overrides */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    footer .container-xxl {
-        display: grid !important;
-        grid-template-columns: 1fr auto 1fr;
-        align-items: center;
-        gap: 1rem;
-    }
-    footer .container-xxl > :first-child {
-        justify-self: start;
-    }
-    footer .container-xxl > nav {
-        justify-self: center;
-    }
-    footer .container-xxl > p {
-        justify-self: end;
-        text-align: right;
-    }
-}
-
 /* Location block */
 .location-info address,
 .location-info .opening-times {
@@ -362,6 +342,27 @@ footer .footer-brand .text-navy {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+}
+
+/* Skip link (keyboard accessibility) */
+.skip-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 1080;
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    transform: translateY(-150%); /* hidden until focused */
+    transition: transform 0.2s ease;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+    transform: translateY(0);
+    outline: none;
 }
 
 /* -------------------- */
@@ -457,7 +458,7 @@ footer .footer-brand .text-navy {
     }
 }
 
-/* 768px–991.98px footer already above */
+/* 768px–991.98px footer overrides (single source of truth) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     footer .container-xxl {
         display: grid !important;
@@ -506,6 +507,24 @@ footer .footer-brand .text-navy {
     /* Simulators: slightly taller on small laptops (lg) */
     .sim-carousel .ratio {
         --bs-aspect-ratio: 52%;
+    }
+}
+
+/* >= 1200px */
+@media (min-width: 1200px) {
+    .about-photo {
+        width: clamp(240px, 24vw, 320px);
+    }
+    /* Smaller carousels on xl screens */
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 46%;
+    }
+}
+
+/* New: >= 1400px (xxl) – even a bit smaller */
+@media (min-width: 1400px) {
+    .sim-carousel .ratio {
+        --bs-aspect-ratio: 40%;
     }
 }
 
