@@ -129,7 +129,7 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 * **HTML5, CSS3, Bootstrap 5**   
 * **Git & GitHub**   
 * **Visual Studio Code**   
-* **Google Fonts (Poppins)**  
+* **Google Fonts**  
 * **Font Awesome**   
 * **W3C & Jigsaw Validators** 
 
