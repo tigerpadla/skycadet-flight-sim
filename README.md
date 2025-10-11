@@ -84,6 +84,8 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 | **Neutral Light Gray**  | `#ECF0F1` | Section dividers, subtle backgrounds, borders. |
 | **Accent Dark Gray**    | `#34495E` | Body text, secondary headings. |
 
+![Homepage](assets/images/color-palette.png)
+
 ### Typography
 
 * [**Poppins**](https://fonts.google.com/specimen/Poppins) font is used for a clean, modern, and readable aesthetic. 
@@ -148,7 +150,7 @@ The website is live at: [SkyCadet Flight Simulator](https://tigerpadla.github.io
 
 ## AI-Assisted Development
 
-* Code generation, debugging, content optimization, logo & design assistance, documentation.
+* Debugging, content optimization, logo & design assistance, documentation.
 
 ---
 
