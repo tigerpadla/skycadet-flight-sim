@@ -40,6 +40,8 @@ This project serves as a **portfolio piece** demonstrating proficiency in front-
 
 The website is multi-page, providing a clear and organized user journey from initial interest to booking inquiry.
 
+![Website Preview](assets/images/3-devices-black.png)
+
 ---
 
 ## User Experience (UX)
@@ -84,7 +86,7 @@ The design is professional, modern, and immersive, evoking the feeling of a slee
 | **Neutral Light Gray**  | `#ECF0F1` | Section dividers, subtle backgrounds, borders. |
 | **Accent Dark Gray**    | `#34495E` | Body text, secondary headings. |
 
-![Homepage](assets/images/color-palette.png)
+![Color Palette](assets/images/color-palette.png)
 
 ### Typography
 
